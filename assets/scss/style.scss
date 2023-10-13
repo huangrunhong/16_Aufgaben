@@ -18,14 +18,15 @@
 
 body {
   max-width: 1320px;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 header {
   background-color: black;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
   .Content {
-    margin-inline: 439px;
-
     .Line {
       width: 1px;
       height: 150px;
@@ -52,12 +53,12 @@ header {
   }
 
   .Interaction {
-    margin-top: 308px;
-    padding-bottom: 40px;
+    margin-top: 19.25rem;
+    padding-inline: 8%;
+    padding-bottom: 2.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-inline: 110px;
   }
   img {
     width: 43px;
@@ -83,6 +84,7 @@ header {
     div {
       padding-top: 100px;
       padding-bottom: 17px;
+      flex: 1;
 
       p {
         @include mixin.fontStyle(WorkSans, 14px, 400, white, 16px);
@@ -93,12 +95,15 @@ header {
         margin-bottom: 17px;
       }
     }
-
+  }
+  .map_image {
+    display: block;
+    flex: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
     img {
-      width: 448px;
-      position: absolute;
-      top: 0;
-      right: 0;
+      width: 100%;
     }
   }
 }
@@ -323,7 +328,7 @@ footer {
 
   .Contact {
     margin-top: 6rem;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

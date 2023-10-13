@@ -14,15 +14,14 @@
 
 body {
   max-width: 1320px;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 header {
   background-color: black;
   text-align: center;
-}
-header .Content {
-  margin-inline: 439px;
+  display: flex;
+  flex-direction: column;
 }
 header .Content .Line {
   width: 1px;
@@ -60,12 +59,12 @@ header .Content .klein_text_2 {
   padding-top: 10px;
 }
 header .Interaction {
-  margin-top: 308px;
-  padding-bottom: 40px;
+  margin-top: 19.25rem;
+  padding-inline: 8%;
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-inline: 110px;
 }
 header img {
   width: 43px;
@@ -98,6 +97,7 @@ header button {
 .Information .map_information div {
   padding-top: 100px;
   padding-bottom: 17px;
+  flex: 1;
 }
 .Information .map_information div p {
   font-family: WorkSans;
@@ -115,11 +115,15 @@ header button {
   line-height: 108px;
   margin-bottom: 17px;
 }
-.Information .map_information img {
-  width: 448px;
+.Information .map_image {
+  display: block;
+  flex: 1;
   position: absolute;
   top: 0;
   right: 0;
+}
+.Information .map_image img {
+  width: 100%;
 }
 
 .Stuck_middle {
@@ -379,7 +383,7 @@ footer .footer_information button {
 }
 footer .Contact {
   margin-top: 6rem;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
