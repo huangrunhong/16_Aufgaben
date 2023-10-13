@@ -1,0 +1,15 @@
+@mixin fontStyle($ff, $fz, $fw,$cl, $lh){
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    color: $cl;
+    line-height: $lh;
+
+}
+
+@mixin buttonStyle() {
+    border: 1px solid #AAA;
+    background-color: black;
+    color: white;
+    padding: 13px 32px;
+}
